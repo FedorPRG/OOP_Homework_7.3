@@ -22,7 +22,7 @@ public class Input {
       String nameAuthor = input.nextLine();
       Integer id = listTask.get(listTask.size() - 1).getId();
       id = id + 1;
-      listTask.add(new Program(id, dataInput, deadLine, nameAuthor));
+      listTask.add(new Task(id, dataInput, deadLine, nameAuthor));
     }
   }
 }

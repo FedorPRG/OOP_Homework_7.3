@@ -17,8 +17,7 @@ public class Read {
       SimpleDateFormat datedeadLine = new SimpleDateFormat("dd.MM.yyyy");
       Date deadLine = datedeadLine.parse(data[3]);
       String nameAuthor = data[4];
-      listTask.add(new Program(id, dataInput,
-          deadLine, nameAuthor));
+      listTask.add(new Task(id, dataInput,deadLine, nameAuthor));
     }
     scan.close();
     r.close();
